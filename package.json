@@ -1,0 +1,23 @@
+{
+  "name": "mancalajs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "teenytest test/lib/**/*.test.js --helper test/helper.js"
+  },
+  "exports": {
+    "./lib/*": "./*"
+  },
+  "imports": {
+    "#lib/*": {
+      "default": "./lib/*"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "teenytest": "^6.0.3"
+  }
+}
